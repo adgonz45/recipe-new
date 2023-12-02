@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+  html{
+    background-color:rgba(122, 191, 191, .5);
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'Bebas Neue', 'Montserrat', 'sans-serif';
+    width: 1280px;
+    background-color: #F2F2F2;
+}
+
+main{
+    background-color: #F2F2F2;
+}
+
+h1{
+    color: #0d0d0d;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 200px;
+    margin-left: 15px;
+    margin-right: 75px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-weight: bold;
+    color: #EB5428;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #EB5428;
+    font-size: 20px;
+}
+
+.nav{
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    left: 312px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 1240px;
+}
+
+
+.nav h2{
+    display: none;
+}
+
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #EB5428;
+}
+
+form {
+    display: flex;
+    border: 2px solid #EB5428;
+    border-radius: 5px;
+    position: absolute;
+    top: 135px; 
+    left: 40%;
+  
+  }
+
+form input{
+    width: 250px;
+}
+
+menu{
+    list-style: none;
+    background-color: #FFFFFF;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin-right: 0;
+    border: 2px solid #EB5428;
+    
+}
+
+
+menu li {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: #EB5428;
+    padding: 35px 35px 35px 35px;
+    display: grid;
+    
+
+}
+
+menu svg{
+    position: relative;
+    top: -170%;
+    right: 8%;
+}
+
+
+
+nav img {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.taco img{
+    position: relative;
+    left: -16.62%;
+   
+    
+}
+
+.taco{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 20px;
+
+}
+
+.taco p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 10px;
+}
+
+.taco p:first-of-type{
+    left: -45px;
+    padding-left: 0;
+    position: relative;
+    line-height: 30px;
+}
+
+
+
+.taco p:last-child{
+    position: relative;
+    top: 130px;
+    right: 50px;
+    line-height: 30px;
+}
+
+
+ 
+ 
+  form svg {
+    width: 30px; 
+    height: 30px;
+    background-color: #EB5428;
+  }
+  
+  button{
+    background-color: #EB5428;
+    stroke: none;
+    border-radius: 0%;
+  }
+
+  h2{
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+  }
+
+  #details{
+   
+    background-color: #0D0D0D;
+    font-family: 'Montserrat';
+    font: 16px;
+    color: #7ABFBF;
+
+  }
+
+  #details h2{
+    text-align: center;
+  }
+
+  #details dd, dt{
+    display: inline-block;
+    padding: 40px;
+  }
+
+  #details dt{
+    font-weight: bold;
+    position: relative;
+    top: -25px;
+   margin: 15px;
+   right: -115px;
+  }
+
+  #details dd{
+    position: absolute;
+    bottom: -280px;
+    padding-left: 1px;
+    margin-left: -33px;
+    
+  }
+
+  #details dd:last-of-type{
+   
+    margin-left: -5px;
+    
+  }
